@@ -1,8 +1,8 @@
 # Quick Note Plugin for Joplin
 
-<link rel="icon" type="image/x-icon" href="docs/assets/icon-32.png">
-
 Quick Note allows you to instantly open a dedicated note for capturing ideas, tasks, or reminders — either on startup or via a customizable keyboard shortcut (default: ALT+Q).
+
+<link rel="icon" type="image/x-icon" href="docs/assets/icon-32.png">
 
 <div align=center>
   <p>Capture ideas instantly with a dedicated Quick Note.</p>
