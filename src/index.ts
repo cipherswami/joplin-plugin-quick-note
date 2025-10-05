@@ -137,6 +137,21 @@ joplin.plugins.register({
       logger.error('Plugin initialization failed', error);
       throw error;
     }
+
+    // Event Listeners
+    await joplin.settings.onChange(async (event) => {
+      logger.debug('Settings change detected', event);
+
+      if (event.keys.includes(SETTINGS.NOTE_ID) || event.keys.includes(SETTINGS.OPEN_ON_STARTUP)) {
+        const settingsValues = await joplin.settings.values([
+          SETTINGS.NOTE_ID,
+          SETTINGS.OPEN_ON_STARTUP,
+        ]);
+        quickNoteId = String(settingsValues[SETTINGS.NOTE_ID] || '');
+        openOnStartup = Boolean(settingsValues[SETTINGS.OPEN_ON_STARTUP]);
+        logger.info('Settings updated', { quickNoteId, openOnStartup });
+      }
+    });
   },
 });
 
