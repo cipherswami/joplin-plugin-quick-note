@@ -1,72 +1,72 @@
 # Quick Note
 
-Quick Note is joplin plugin which allows you to instantly open a dedicated note for capturing ideas, tasks, or reminders — either on startup or via a customizable keyboard shortcut.
-
-<link rel="icon" type="image/x-icon" href="docs/assets/icon-32.png">
-
-<div align=center>
-  <p>Capture ideas instantly with a dedicated Quick Note.</p>
-</div>
+Quick Note is a Joplin plugin that lets you instantly open a dedicated note either automatically on startup or anytime via a keyboard shortcut.
 
 ## Features
 
-- Open a Quick Note on Joplin startup.
-- Set any note as your Quick Note.
-- Open Quick Note anytime with **Alt+Q** (customizable shortcut).
-- Toolbar button for one-click access.
-- Easily unset the Quick Note when no longer needed.
+- 🚀 Automatically open Quick Note on Joplin startup (can be disabled)
+- 📝 Set **any existing note** as your Quick Note
+- ⌨️ Open Quick Note anytime with **Alt + Q** (customizable)
+- 🔄 Easily unset or change the Quick Note
 
 ## Installation
 
-There are two ways to install Quick Note:
+1. **From Market-Place (Recommended)**
 
-### **Joplin Market Place**
+- Open Joplin and navigate to **Tools → Options → Plugins → Search**
+- Search for **Quick Note**
+- Click **Install** and restart Joplin
 
-- Open Joplin → Tools → Options → Plugins → `Search`.
-- Search for **Quick Note** and install directly.
+2. **From Source**
 
-### **Build from source**
-
-- Clone the repositroy:
+- Build the plugin package file (.jpl):
 
   ```bash
   git clone https://github.com/cipherswami/joplin-plugin-quick-note.git
-  ```
-
-- Install dependencies:
-
-  ```bash
-    npm install
-  ```
-
-* Generate the plugin package (`.jpl` will be created in the `publish/` directory):
-
-  ```bash
+  cd joplin-plugin-quick-note
+  npm install
   npm run dist
   ```
 
-* In Joplin, go to **Tools → Options → Plugins → Install from file**, then select the generated `.jpl` to install it.
+- Then in Joplin, Go to **Tools → Options → Plugins → Install from file**
+- Select the generated `.jpl` file from the `publish/` directory
 
 ## Usage
 
-1. Select a note → **Tools → Quick Note → Set as Quick Note**.
-2. Quick Note automatically opens on Joplin startup (can be disabled in settings).
-3. Press **Alt+Q** (or your configured shortcut) to open the Quick Note instantly.
-4. To unset the Quick Note, use **Unset Quick Note** from the menu.
+**Set a Quick Note:**
 
-## Commands
+- Open a note and go to **Tools → Quick Note → Set as Quick Note**, OR
+- Paste the Note ID in **Tools → Options → Quick Note → Quick NoteID**, OR
+- Open desired note and run the **Set as Quick Note** command
 
-- **Open Quick Note** → Opens your Quick Note.
-- **Set as Quick Note** → Sets the current note as your Quick Note.
-- **Unset Quick Note** → Removes the Quick Note.
+**Access Quick Note:**
+
+- Press **Alt + Q** _(customizable shortcut)_, OR
+- Click the **Quick Note** toolbar button, OR
+- Go to **Tools → Quick Note → Open Quick Note**, OR
+- Run the **Open Quick Note** command
+
+_Note: Opens automatically on startup (can be disable in settings)_
+
+**Remove Quick Note:**
+
+- Go to **Tools → Quick Note → Unset Quick Note**, OR
+- Run the **Unset Quick Note** command
 
 ## Settings
 
-Navigate to **Tools → Options → Quick Note** to configure:
+Access settings at **Tools → Options → Quick Note**:
 
-- **Open on Startup**: Automatically open the Quick Note when Joplin starts.
-- **Quick Note ID**: The ID of the note set as Quick Note.
+- **Open on Startup** - Automatically open Quick Note when Joplin launches
+- **Quick Note ID** - The NoteID of your designated Quick Note
 
-## Contributing
+## Support & Community
 
-Contributions are welcome! Feel free to open issues or pull requests on [GitHub](https://github.com/cipherswami/joplin-plugin-quick-note).
+### Getting Help
+
+- **Questions & Discussions**: Join the conversation on the [Joplin Forum](https://discourse.joplinapp.org/t/quick-note/47445)
+- **Bug Reports**: Report issues on [GitHub Issues](https://github.com/cipherswami/joplin-plugin-quick-note/issues).
+
+### Contributing
+
+Contributions are welcome! Visit the [GitHub repository](https://github.com/cipherswami/joplin-plugin-quick-note) to submit pull requests or suggest new features.
