@@ -8,7 +8,11 @@
  * Imports
  */
 import joplin from "api";
-import { MenuItemLocation, ToolbarButtonLocation } from "api/types";
+import {
+  MenuItemLocation,
+  SettingStorage,
+  ToolbarButtonLocation,
+} from "api/types";
 import { SettingItemType, ToastType } from "api/types";
 import { createLogger, LogLevel } from "./logger";
 
@@ -133,12 +137,10 @@ joplin.plugins.register({
     // Auto open Quick Note if enabled
     if (settingOptions.quickNoteId && settingOptions.openOnStartup) {
       logger.debug("Attempting to open Quick Note on startup");
-      try {
+      setTimeout(async () => {
         await joplin.commands.execute("openNote", settingOptions.quickNoteId);
-        logger.info("Quick Note opened on startup");
-      } catch (error) {
-        logger.error("Failed to open Quick Note on startup", error);
-      }
+        logger.info("Quick Note Opened on startup");
+      }, 500);
     }
 
     // Event Listeners

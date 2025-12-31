@@ -46,7 +46,7 @@ Quick Note is a Joplin plugin that lets you instantly open a dedicated note eith
 - Go to **Tools → Quick Note → Open Quick Note**, OR
 - Run the **Open Quick Note** command
 
-_Note: Opens automatically on startup (can be disable in settings)_
+_Note: Plugin automatically opens quick note on startup (Can be turned off in settings)_
 
 **Remove Quick Note:**
 
@@ -60,13 +60,13 @@ Access settings at **Tools → Options → Quick Note**:
 - **Open on Startup** - Automatically open Quick Note when Joplin launches
 - **Quick Note ID** - The NoteID of your designated Quick Note
 
-## Support & Community
-
-### Getting Help
+## Support
 
 - **Questions & Discussions**: Join the conversation on the [Joplin Forum](https://discourse.joplinapp.org/t/quick-note/47445)
 - **Bug Reports**: Report issues on [GitHub Issues](https://github.com/cipherswami/joplin-plugin-quick-note/issues).
 
-### Contributing
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more details.
 
 Contributions are welcome! Visit the [GitHub repository](https://github.com/cipherswami/joplin-plugin-quick-note) to submit pull requests or suggest new features.
